@@ -24,8 +24,15 @@
             <p>{%lorem%}</p>
             <br>
             <p>
-                <a class="btn btn-default" href = "/test/">Contacts</a>
+                <a class="btn btn-default" href = "{% url 'page' 'test' %}">Contacts</a>
             </p>
         </div>
     </div>
 </div>
+<footer>
+    <div class="container">
+        <p>
+            &copy; VR Shipping {% now 'Y' %}
+        </p>
+    </div>
+</footer>
